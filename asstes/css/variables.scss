@@ -1,0 +1,16 @@
+$primary : #4382f9;
+$secondary: #858d9e;
+$tertiary : #e9ecf0;
+$success: #fafbfc;
+$dark       : #000;
+$info  :#fff;
+$left:left;
+$right:right;
+$minxsmaill  :"(min-width: 576px)";
+$minsmail    :"(min-width: 768px)";
+$minmediaum  :"(min-width: 992px)";
+$minlarge    :"(min-width: 1200px)";
+@font-face {
+    font-family: Oswald;
+    src        : url(../webfonts/Oswald-VariableFont_wght.ttf);
+}

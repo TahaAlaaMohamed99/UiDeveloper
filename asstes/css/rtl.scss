@@ -1,0 +1,142 @@
+@use"./variables" as*;
+$left:right;
+$right:left;
+/*main-menu*/
+.main-menu {
+    #{$left}               : -15rem;
+    .navbar-header {
+        .logo {
+            margin-#{$right} : auto;
+            margin-right: 0;
+        }
+    }
+
+    .navigation-main {
+
+        .nav-item {
+            &.active {
+                border-#{$left}     : 3px solid $primary;
+                border-left: 0;
+            }
+        }
+    }
+
+    &:hover {
+        #nav-Project {
+            .nav-icon {
+                padding-#{$right}  : 0.4rem;
+                padding-right: 0;
+            }
+
+            .nav-back {
+                .icon {
+                    padding-#{$right} : 0.2rem;
+                    padding-right: 0;
+
+                }
+            }
+        }
+    }
+
+    @media #{$minlarge} {
+        #{$left} : 0;
+    }
+
+    @media #{$minmediaum} {
+        #{$left} : 0;
+    }
+}
+
+.open {
+    #{$left}      : 0;
+    #nav-Project {
+        .nav-icon {
+            padding-#{$right} : 0.4rem;
+            padding-right: 0;
+
+        }
+        .nav-back {
+            .icon {
+                padding-#{$right}: 0.2rem;
+                padding-right: 0;
+
+            }
+        }
+    }
+}
+
+/*nav-bar*/
+.nav-bar {
+    padding-#{$left}: 0;
+
+    @media #{$minmediaum} {
+        padding-#{$left}: 4rem;
+        padding-left: 0;
+    }
+
+    .container {
+        .luangue {
+            margin-#{$left}: auto;
+            .button-luangue {
+                margin-#{$right}    : 5px;
+                margin-right: 0;
+            }
+        }
+
+    }
+}
+
+/*submittal*/
+.submittal {
+    .remove {
+        #{$right}           : 20px;
+        right: auto;
+        @media #{$minmediaum} {
+            #{$right}: 60px;
+            right: auto;
+        }
+    }
+}
+
+/*app-subject-list*/
+.app-subject-list {
+    padding-#{$left}: 0;
+
+    @media #{$minmediaum} {
+        padding-#{$left}: 4rem;
+        padding-right: 0;
+
+    }
+
+    .add-new-subject {
+        .group {
+            .form-label {
+                #{$left}            : 20px;
+                left: auto;
+            }
+
+            .form-radio {
+                margin-#{$left}: 0.8rem;
+                margin-left: 0;
+            }
+        }
+    }
+    /*table-card*/
+    .table-card {
+        .table-subject {
+            .subject-list-table {
+                th,
+                td {
+                    border-#{$left}  : 1px solid $tertiary;
+                    border-left: 0;
+                }
+            }
+        }
+    }
+}
+
+/*.scroll-to-top*/
+.scroll-to-top {
+    #{$right}           : 40px;
+    right: auto;
+}

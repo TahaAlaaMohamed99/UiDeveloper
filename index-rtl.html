@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ui Developer RTL (Taha Alaa)</title>
+    <link rel="shortcut icon" type="image/png" href="asstes/images/logo.PNG">
+    <link rel="stylesheet" href="asstes/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="asstes/css/style.css">
+    <link rel="stylesheet" href="asstes/css/rtl.css">
+
+</head>
+
+<body>
+    <!-- main-menu -->
+    <main class="main-menu shadow">
+        <!--navbar-header  -->
+        <div class=" menu-toggle">
+            <i class="fa fa-xmark"></i>
+        </div>
+        <div class="navbar-header border-bottom">
+            <ul class="row-flex navbar-nav">
+                <li class="logo nav-item ">
+                    <a class="nav-link" href="#">
+                        <img src="asstes/images/logo.PNG" alt="">
+                    </a>
+                </li>
+                <li class="nav-item selecte">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">PM</span>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                
+                        <ul class="options">
+                            <li class="option">
+                                <span class="option-text">AM</span>
+                            </li>
+                            <li class="option">
+                                <span class="option-text">PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- main-menu-content -->
+        <div class="main-menu-content">
+            <ul class="navigation-main">
+                <li class=" nav-item border-bottom" id="nav-Project">
+                    <a class="nav-link" href="#"> <i class="fa-regular fa-briefcase nav-icon"></i>
+                        <!--nav-back  -->
+                        <div class="nav-back">
+                            <i class="fa-solid fa-angle-left icon"></i><span class="nav-titel">Back to Project</span>
+                        </div>
+                    </a>
+                    <!-- item-titel -->
+                    <div class="item-titel">
+                        <h6>East Town (P2)</h6>
+                    </div>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="#"> <i class="fa-solid fa-grid nav-icon"></i>
+                        <span class="nav-titel"> Tab 1</span>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="#"> <i class="fa-regular fa-home nav-icon"></i>
+                        <span class="nav-titel">Tab 2</span>
+                    </a>
+                </li>
+                <li class=" nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fa-regular fa-buildings nav-icon"></i>
+                        <span class="nav-titel">Tab 3</span>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-regular fa-file-lines nav-icon"></i>
+                        <span class="nav-titel">Tab 4</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <!-- end-main-menu -->
+    <!-- nav-bar -->
+    <nav class="nav-bar border-bottom">
+        <ul class="container row-flex">
+            <li class="nav-item menu-toggle">
+                <i class="fa-solid fa-bars "></i>
+            </li>
+            <li class="nav-item titel">
+                <h5 class="titel-name">Technical Office <span>.East Town (P2)</span></h5>
+            </li>
+            <li class="nav-item luangue">
+                <!-- EN -->
+                <button class="button-luangue EN">
+                    <a href="index.html">English</a></button>
+                <!-- AR -->
+                <button class="button-luangue AR"><a href="index-rtl.html">عربى</a></button>
+            </li>
+        </ul>
+    </nav>
+    <!-- end nav-bar-->
+    <!-- submittal -->
+    <div class="submittal">
+        <div class="container row-flex">
+            <div class="text-box">
+                <h3>Submittal</h3>
+                <p>Uptown Cairo - Technical Office </p>
+            </div>
+            <button class="remove">
+                <i class="fa fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    <!-- end-submittal -->
+    <!-- ssection:app-subject-list  -->
+    <section class="app-subject-list">
+        <div class="container">
+            <div class="modal-form">
+                <!--  add-new-subject-->
+                <form action="#" class="add-new-subject row-flex">
+                    <!--  group-->
+                    <div class="group">
+                        <input class="form-input" type="text" placeholder="Subject">
+                        <label class="form-label">Subject</label>
+                    </div>
+                    <!-- group -->
+                    <div class="group row-flex">
+                        <div class="form-radio">
+                            <label for="status">status</label>
+                            <input class="radio" name="subject" type="radio" id="status" value="status" checked>
+                        </div>
+                        <div class="form-radio">
+                            <div class="group-radio">
+                                <label for="Opened">Opened</label>
+                                <input class="radio" name="subject" type="radio" id="Opened" value="Opened">
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <div class="group-radio">
+                                <label for="Colsed">Colsed</label>
+                                <input class="radio" name="subject" type="radio" id="Colsed" value="Colsed">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- group -->
+                    <div class="group">
+                        <input class="form-input w-50" type="text" placeholder="No">
+                        <label class="form-label">No.</label>
+                    </div>
+                    <!-- group -->
+                    <div class="group">
+                        <input class="form-input" type="text" placeholder="Name">
+                        <label class="form-label">Name</label>
+                    </div>
+                    <div class="group">
+                        <input class="form-submit" type="submit" value="Add Item">
+                    </div>
+                </form>
+            </div>
+            <!-- end-form -->
+            <!-- table -->
+            <div class="table-card">
+                <div class="titel border-bottom">
+<p>Previous cycle</p>
+                </div>
+                <div class="table-subject">
+                    <table class="subject-list-table ">
+                        <thead>
+                            <tr role="row">
+                    <th class="col-1">No.</th>
+                    <th class="col-5">Subject</th>
+                    <th class="col-2">Status</th>
+                    <th class="col-2">Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                            <tr class="dataTables">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Request For Information
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                                <td>
+                                    True
+    
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <!-- scroll-to-top -->
+    <div class="scroll-to-top" id="scrollTop">
+<i class="fa-solid fa-circle-up"></i>
+    </div>
+    <script src="asstes/js/jquery-3.3.1.min.js"></script>
+    <script src="asstes/js/main.js"></script>
+</body>
+
+</html>
